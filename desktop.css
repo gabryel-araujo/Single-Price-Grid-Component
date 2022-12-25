@@ -1,0 +1,33 @@
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+  body{
+    padding: 10rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      "white-card white-card"
+      'cyan-card blue-card';
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .white-card{
+    padding: 2.5rem;
+  }
+
+  .cyan-card{
+    padding: 2.5rem;
+    width: 20rem;
+    border-radius: 0 0 0 0.5rem;
+  }
+
+  .blue-card{
+    padding: 2.5rem;
+    width: 20rem;
+    border-radius: 0 0 0.5rem 0;
+  }
+
+}

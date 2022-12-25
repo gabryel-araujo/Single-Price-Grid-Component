@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family:'Karla', serif;
+}
+
+p{
+  font-size: 16px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+    "white-card"
+    "cyan-card"
+    "blue-card";
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.24);
+}
+
+.white-card{
+  grid-area: white-card;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.white-card h3{
+  color: hsl(179, 62%, 43%);
+}
+
+.white-card h4{
+  color: hsl(71, 73%, 54%);
+}
+
+.white-card p{
+  color: gray;
+}
+
+.cyan-card{
+  grid-area: cyan-card;
+  background-color: hsl(179, 62%, 43%);
+  padding: 1rem;
+}
+
+.cyan-card section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cyan-card span {
+  margin-left: 0.7rem;
+  color: gray;
+}
+
+.cyan-card h1, .cyan-card h3, .cyan-card p {
+  color: white;
+}
+
+.cyan-card button{
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.24);
+}
+
+.cyan-card button:hover {
+  cursor: pointer;
+}
+
+.blue-card{
+  grid-area: blue-card;
+  background-color: #4ABEBD;
+  padding: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: white;
+  text-align: start;
+}
